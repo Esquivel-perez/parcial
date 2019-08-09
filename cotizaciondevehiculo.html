@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Cotizacion de Vehiculo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="container">
+<h1>Vehiculos</h1>
+<form name="formulario"  id="formulario" method="post" action="Cotizacion.php">
+
+
+    <h1> Formulario Solicitud de Cotizacion de un Vehiculo</h1>
+
+<hr/>
+    <h2>Datos personales</h2>
+    <li>    <label for="nombre">Nombre</label> <br/> </li>
+    <li>   <input type="text" name="nombre" id="nombre"required> <br/> </li>
+
+    <li>  <label for="apellido">apellido</label> <br/> </li>
+    <li>  <input type="text" name="apellido" id="apellido" required> <br/> </li>
+
+    <li>  <label for="direccion">direccion</label> <br/> </li>
+    <li>  <input type="text" name="direccion" id="direccion" required> <br/> </li>
+
+
+    <li>  <label for="telefono">Telefono</label> <br/> </li>
+    <li> <input type="tel" pattern="[0-9]{8}" name="telefono" id="telefono" required> <br/> </li>
+
+    <li>  <label for="email">email</label> <br/> </li>
+    <li>  <input type="email" name="email" id="email" required> <br/> </li>
+
+<hr/>
+
+<h2>Datos del Vehiculo</h2>
+    <p>
+    <li>  <label for="tipovehiculo">Tipo de vehiculo</label> <br/> </li>
+
+    <select name="tipovehiculo" id="tipovehiculo">
+        <option value="Sedan">Sedan</option>
+        <option value="Pick up">Pick-up</option>
+        <option value="Camioneta ">Camioneta</option>
+
+
+    </select>
+    </p>
+
+    <p>
+    <li>  <label for="marca">Marca</label> <br/> </li>
+
+    <select name="marca" id="marca">
+
+        <option value="Nissan">Nissan</option>
+        <option value="BMW">BMW</option>
+        <option value="Mitsubishi">Mitsubishi</option>
+        <option value="toyota">Toyota</option>
+        <option value="Mazda">Mazda</option>
+
+    </select>
+    </p>
+
+    <p>
+    <li>  <label for="modelo">Modelo</label> <br/> </li>
+
+    <select name="modelo" id="modelo">
+
+        <option value="i3s">i3s</option>
+        <option value="frontier">frontier</option>
+        <option value="Montero">Montero</option>
+        <option value="corolla">corolla</option>
+
+
+    </select>
+    </p>
+
+    <p>
+    <li>  <label for="año">año</label> <br/> </li>
+
+    <select name="año" id="año">
+
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+
+
+    </select>
+    </p>
+
+    <p>
+    <li>  <label for="color">Color</label> <br/> </li>
+
+    <select name="color" id="color">
+
+        <option value="Blanco">Blanco</option>
+        <option value="Azul">Azul</option>
+        <option value="Negro">Negro</option>
+        <option value="Rojo">Rojo</option>
+        <option value="Rosa">Rosa</option>
+    </select>
+    </p>
+   <hr/>
+        <div/>
+    <li> <input type="submit" value="Enviar"> <br/> </li>
+
+
+
+ </form>
+<p class="text-danger"> </p>
+</body>
+</html>
